@@ -1,0 +1,31 @@
+<!--pages/tixian/tixian.wxml-->
+<view class="mo">
+    <view class="ban-box">
+        <view class="nav">
+          <text>我的收藏</text>
+          <view class="icon-btn" bindtap='retu'>
+            <image src="../../icons/reutrn4.png"></image>
+          </view>
+        </view>
+    </view>
+</view>
+<view class="content" >
+    <image src="../../icons/auau.png"></image>
+    <view class="textCon">
+        <text>免费流量无线访客10000+0基础手把手教你</text>
+        <view class="Price">
+         <text>用户名</text>
+         <button class="quxaio">取消收藏</button>
+        </view>
+    </view>
+</view>
+<view class="content" >
+    <image src="../../icons/auau.png"></image>
+    <view class="textCon">
+        <text>免费流量无线访客10000+0基础手把手教你</text>
+        <view class="Price">
+         <text>用户名</text>
+         <button class="quxaio">取消收藏</button>
+        </view>
+    </view>
+</view>

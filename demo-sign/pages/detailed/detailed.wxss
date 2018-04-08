@@ -1,0 +1,51 @@
+/* pages/detailed/detailed.wxss */
+.banswiper {
+  margin-top: 0rpx;
+}
+.banswiper swiper {
+  height:240px;
+}
+.banswiper image{
+   width: 100%; 
+}
+/*  */
+.con_section{ 
+  width:100%;
+}
+.con_images image {
+  width: 100%;
+  height: 250rpx;
+}
+.con_text {
+  width: 94%;
+  margin: 0 auto;
+  color: #666;
+  letter-spacing: 1px;
+}
+.con_text text {
+  font-size: 30rpx;
+  color: #333;
+}
+.bt_content {
+  font-size: 28rpx;
+}
+.btn {
+  width: 90%;
+  height: 1.8rem;
+  background-color: green;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 2em;
+  color: #fff;
+  bottom: 10rpx;
+}
+.btn_box {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  bottom:0;
+  padding: 10px 0;
+}
+

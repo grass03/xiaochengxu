@@ -1,0 +1,19 @@
+<!--pages/selected/selected.wxml-->
+<view class="container">
+  <view class="top_nav">
+    <text>精选课题</text>
+    <view class="btn-return">
+      <image src="../../icons/reutrn4.png">
+      </image>
+    </view>
+  </view>
+  <view style='margin-top: 80rpx;'>
+    <view class="content">
+      <image src="../../icons/auau.png"></image>
+      <view class="textCon">
+        <text>第一课第一课第一课第一课第一课第一课第一课</text>
+        <view class="Price">￥60</view>
+      </view>
+    </view>
+  </view>
+</view>

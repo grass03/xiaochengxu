@@ -1,0 +1,11 @@
+<!--pages/setting/setting.wxml-->
+<view class="container">
+  <navigator url="signup" class="gosinup">注册></navigator>
+  <view class="bg_content">
+    <form class="form" bindsubmit='bindsubmit'>
+      <label>邮箱:<input type="email" bindinput="bindEmail"/></label>
+      <label>密码:<input class="pass" type="password" bindinput='bindPassword'/></label>
+      <view class="submit"><button size="mini" form-type='submit'>登录</button></view>
+    </form>
+  </view>
+</view>

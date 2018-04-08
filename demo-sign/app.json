@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detailed",
+    "pages/search/search",
+    "pages/sign/signin",
+    "pages/sign/signup",
+    "pages/setting/setting",
+    "pages/detailed/detailed",
+    "pages/curriculum/curriculum",
+    "pages/Mycourse/Mycourse",
+    "pages/porson/porson",
+    "pages/selected/selected",
+    "pages/audition/audition",
+    "pages/area/area",
+    "pages/wallet/wallet",
+    "pages/tixian/tixian",
+    "pages/congzhi/congzhi",
+    "pages/shoucang/shoucang",
+    "pages/libao/libao",
+    "pages/fabu/fabu",
+    "pages/xiaoxi/xiaoxi",
+    "pages/fensi/fensi",
+    "pages/tuiguang/tuiguang",
+    "pages/shouyi/shouyi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#464547",
+    "navigationBarTitleText": "大咖课程",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#efefef",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "icons/daka_01.png",
+        "text": "大咖课程",
+        "selectedIconPath": "icons/daka_03.png"
+      },
+      {
+        "pagePath": "pages/porson/porson",
+        "iconPath": "icons/geren_01.png",
+        "text": "个人中心",
+        "selectedIconPath": "icons/geren_02.png"
+      },
+      {
+        "pagePath": "pages/sign/signin",
+        "iconPath": "icons/jinrong_01.png",
+        "text": "金融咨询",
+        "selectedIconPath": "icons/jinrong_02.png"
+      }
+    ]
+  }
+}

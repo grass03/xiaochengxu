@@ -1,0 +1,44 @@
+<!--pages/curriculum/curriculum.wxml-->
+<view class="mo">
+    <view class="ban-box">
+        <view class="nav">
+          <text>我的礼物</text>
+          <view class="icon-btn" bindtap='retu'>
+            <image src="../../icons/reutrn4.png"></image>
+          </view>
+        </view>
+    </view>
+</view>
+<!--pages/detailed/detailed.wxml-->
+<view class="container">
+  <view class="container">
+  <view class="header">
+    <view class='{{current == 0?"active":""}}' data-index="0" catchtap="bindHeaderTap">收到</view>
+    <view class='{{current == 1?"active":""}}' data-index="1" bindtap="bindHeaderTap">送出</view>
+    <view class="shift" animation="{{shiftanimation}}"></view>
+  </view>
+  <view class="wrapper">
+    <swiper id="swiper" class="main-swiper"  duration="300" current="{{current}}" bindchange="bindSwiper">
+      <swiper-item id="swiper-item" wx:for="{{listCon}}" wx:for-index='key' wx:for-item='item'>
+        <view class="introduce">
+           {{item.introduce}}
+        </view>
+      </swiper-item>
+      <swiper-item  wx:for="{{listtext}}" wx:for-index='key' wx:for-item='item'>
+        <view class="course">
+          <view class="hour">
+            <text class="hourList">{{item.hourlist}}</text>
+            <view class="times">{{item.hourTime}}</view>
+          </view>
+          <view class="circular"></view>
+          <view class="coucher">
+            <text class="title">{{item.title}}</text>
+            <image src="{{item.soop}}" mode="aspectFill"></image>
+            <text class="autoOne">{{item.some}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
+</view>

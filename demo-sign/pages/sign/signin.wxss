@@ -1,0 +1,43 @@
+/* pages/sign/signin.wxss */
+/* pages/setting/setting.wxss */
+.bg_content {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 100px;
+}
+ label {
+  float: left;
+  margin-top: 25rpx;
+} 
+input {
+  float: right;
+  width: 500rpx;
+  height: 60rpx;
+  border-bottom: 1px solid #333; 
+}
+.submit {
+  color: #fff;
+  width: 24%;
+  margin: 0 auto;
+  display: block;
+}
+.pass {
+  margin-bottom: 40rpx;
+}
+.gosinup {
+  width: 80%;
+  height: 60rpx;
+  text-align: right;
+  font-size: 32rpx;
+  margin: 0 auto;
+  padding-top: 40rpx;
+}
+.tips {
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: red;
+  width: 100%;
+  text-align: center;
+  display: block;
+}

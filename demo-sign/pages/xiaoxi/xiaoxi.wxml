@@ -1,0 +1,13 @@
+<!--pages/curriculum/curriculum.wxml-->
+<view class="mo">
+    <view class="ban-box">
+        <view class="nav">
+          <text>我的消息</text>
+          <view class="icon-btn" bindtap='retu'>
+            <image src="../../icons/reutrn4.png"></image>
+          </view>
+        </view>
+    </view>
+</view>
+
+

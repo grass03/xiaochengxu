@@ -1,0 +1,4 @@
+<!--pages/tuiguang/tuiguang.wxml-->
+<view style='background:url("../../icons/515.png");-webkit-background-size:cover;'>
+<!-- <image src="../../icons/515.png" ></image> -->
+</view>

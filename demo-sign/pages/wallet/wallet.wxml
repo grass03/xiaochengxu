@@ -1,0 +1,22 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="mo">
+    <view class="ban-box">
+        <view class="nav">
+          <text>我的余额</text>
+          <view class="icon-btn" bindtap='retu'>
+            <image src="../../icons/reutrn.png"></image>
+          </view>
+        </view>
+        <view class="ban-con">
+            <text>0</text>
+            <view class="btn">
+              <view bindtap='tiixain'>提现</view>
+              <view bindtap='congzhi'>充值</view>
+            </view>
+        </view>
+    </view>
+    <view class="chongzhi">
+          <text bindtap='tiixain'>充值中心</text>
+          <text bindtap='congzhi'>提现记录</text>
+    </view>
+ </view>

@@ -1,0 +1,50 @@
+<!--pages/search/search.wxml-->
+<view class="container ">
+ <!--banner-->
+  <view class="banswiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorcolor}}">
+           <block wx:for-items="{{banner_url}}" wx:key="item.id">
+              <swiper-item>
+                <block wx:if="{{item}}">
+                  <image src="{{item}}"  mode="aspectFill"/>
+                </block>
+                <block wx:else>
+                   <image src="../../images/default_pic.png" mode="aspectFill"></image> 
+                </block>
+              </swiper-item>
+          </block> 
+      </swiper>
+  </view>
+  <!--banner  -->
+  <!--nav  -->
+  <!-- <view class="nav">
+    <view class="nav_one">叶子陪你</view>
+    <view class="nav_tow">粉丝营销</view>
+  </view> -->
+
+  <view class="nav">
+    <view wx:for="{{nums}}" wx:for-index='key' wx:for-item='item'>
+       <view bindtap="imgchange"  id="{{key}}">
+            <text class="nav_title">{{item.name}}</text> 
+      </view>
+    </view>
+  </view>
+  <!--content  -->
+  <view class="con_section">
+    <view wx:for='{{contentList}}' class="content_massge" bindtap='detailed' wx:for-index='key' wx:for-item='item'>
+      <view class="con_images">
+          <image src="{{item.shopping}}" mode="aspectFill"/> 
+      </view>
+      <view class="con_text">
+          <view class="title">
+             <text>{{item.title}}</text>
+          </view>
+          <view class="bt_text">
+            <text class="bt_textOne">{{item.bt_text}}</text>
+          </view>
+      </view>
+    </view> 
+  </view>
+
+</view>

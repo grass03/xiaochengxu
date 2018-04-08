@@ -1,0 +1,118 @@
+<!--index.wxml-->
+<view class="container">
+<!--top_nav  -->
+  <view class="wrapper">
+    <swiper id="swiper" class="main-swiper" duration="200" bindchange="bindSwiper" display-multiple-items="6">
+      <swiper-item >
+         <view  >
+          <scroll-view class="nav_text_one" style="height: 100%;" >
+            <text class="nav_text" hover-class="other-navigator-hover">推荐</text>
+          </scroll-view>
+        </view> 
+      </swiper-item>
+        <swiper-item >
+        <view class="articles">
+          <scroll-view style="height: 100%;" >
+           <text class="nav_text" hover-class="other-navigator-hover">婚姻</text>
+          </scroll-view>
+        </view>
+      </swiper-item> 
+      <swiper-item >
+        <view class="articles">
+          <scroll-view  style="height: 100%;">
+           <text class="nav_text" hover-class="other-navigator-hover">家庭关系</text>
+          </scroll-view>
+        </view>
+      </swiper-item> 
+      <swiper-item >
+        <view class="articles">
+          <scroll-view  style="height: 100%;">
+           <text class="nav_text" hover-class="other-navigator-hover">恋爱</text>
+          </scroll-view>
+        </view>
+      </swiper-item>
+      <swiper-item >
+        <view class="articles">
+          <scroll-view  style="height: 100%; width:60%;">
+           <text class="nav_text" hover-class="other-navigator-hover">母婴</text>
+          </scroll-view>
+        </view>
+      </swiper-item> 
+      <swiper-item >
+        <view class="articles">
+          <scroll-view  style="height: 100%; width:60%;">
+           <text class="nav_text" hover-class="other-navigator-hover">育儿</text>
+          </scroll-view>
+        </view>
+      </swiper-item> 
+      <swiper-item >
+        <view class="articles">
+          <scroll-view  style="height: 100%; width:60%;">
+           <text class="nav_text" hover-class="other-navigator-hover">家教</text>
+          </scroll-view>
+        </view>
+      </swiper-item> 
+    </swiper>
+  </view>
+  <!--top_nav  -->
+  <!--banner-->
+  <view class="banswiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorcolor}}">
+           <block wx:for-items="{{banner_url}}" wx:key="item.id">
+              <swiper-item>
+                <block wx:if="{{item}}">
+                  <image src="{{item}}"  mode="aspectFill"/>
+                </block>
+                <block wx:else>
+                   <image src="../../images/default_pic.png" mode="aspectFill"></image> 
+                </block>
+              </swiper-item>
+          </block> 
+      </swiper>
+  </view>
+  <!--banner  -->
+  <!--nav  -->
+  <view class="nav-list">
+       <view bindtap="imgchangeOne" class="nav_con" id="{{key}}">
+            <image class="list" src="../../icons/icon1.png" mode="widthFix"/> 
+            <text>我的课程</text>
+      </view>
+      <view bindtap="imgchangeTow" class="nav_con" id="{{key}}">
+            <image class="list" src="../../icons/icon2.png" mode="widthFix"/> 
+            <text>精选专题</text> 
+      </view>
+      <view bindtap="imgchangeThree" class="nav_con" id="{{key}}">
+            <image class="list" src="../../icons/icon3.png" mode="widthFix"/> 
+            <text>精品试听</text> 
+      </view>
+      <view bindtap="imgchangeFour" class="nav_con" id="{{key}}">
+            <image class="list" src="../../icons/icon4.png" mode="widthFix"/> 
+            <text>免费专区</text> 
+      </view>
+   
+  </view>
+  <!--抢购  -->
+  <view class="img_qiang">
+      <image src='../../icons/qianggou.png' mode="widthFix"></image>
+  </view>
+<!--content  -->
+  <view class="con_section">
+    <view wx:for='{{contentList}}' class="content_massge" wx:for-index='key' wx:for-item='item' bindtap='detailins'>
+      <view class="con_images">
+          <image src="{{item.shopping}}" mode="aspectFill"/> 
+      </view>
+      <view class="con_text">
+          <text class="title">{{item.title}}</text>
+          <view class="bt_text">
+            <text class="bt_textOne">{{item.bt_text}}</text>
+            <view class="bt_textThree">￥{{item.bt_textThree}}</view>
+            <view class="bt_textTow">{{item.bt_textTow}}</view>
+          </view>
+      </view>
+    </view> 
+  </view>
+
+  
+
+</view>

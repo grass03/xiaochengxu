@@ -1,0 +1,72 @@
+<!--pages/porson/porson.wxml-->
+<view class="container">
+   <view class="topCon">
+      <view class="information">
+        <view class="imgHad">
+           <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view class="context">
+            <text class="name">{{userInfo.nickName}}</text>
+            <view class="troduce">
+              <view class="left">
+                <text>会员等级: 普通会员</text>
+                <text>总收入: 0.00</text>
+              </view>
+              <view class="right">
+                <text>手机号: 没有填写</text>
+                <text>邀请人: 用户不存在</text>
+              </view>
+            </view>
+        </view>
+      </view>
+   </view>
+   <!--内容  -->
+   <view class="conlist">
+     <view class="list">
+        <view class="list_on">
+          <image src="../../icons/m01.png"></image>
+          <text>我的课程</text>
+        </view>
+        <view class="list_on" bindtap='qianbao'>
+          <image src="../../icons/m02.png"></image>
+          <text>我的钱包</text>
+        </view>
+        <view class="list_on" bindtap='shoucang'>
+          <image src="../../icons/m03.png"></image>
+          <text>我的收藏</text>
+        </view>
+     </view>
+     <view class="list">
+        <view class="list_on" bindtap='libao'>
+          <image src="../../icons/m04.png"></image>
+          <text>我的礼包</text>
+        </view>
+        <view class="list_on" bindtap='fabu'>
+          <image src="../../icons/m05.png"></image>
+          <text>我的发布</text>
+        </view>
+        <view class="list_on" bindtap='xiaoxi'>
+          <image src="../../icons/m06.png"></image>
+          <text>我的消息</text>
+        </view>
+     </view>
+     <view class="list">
+        <view class="list_on" bindtap='fensi'>
+          <image src="../../icons/m07.png"></image>
+          <text>我的粉丝</text>
+        </view>
+        <view class="list_on" bindtap='tuiguang'>
+          <image src="../../icons/m08.png"></image>
+          <text>推广海报</text>
+        </view>
+        <view class="list_on" bindtap='shouyi'>
+          <image src="../../icons/m09.png"></image>
+          <text>收益明细</text>
+        </view>
+     </view>
+   </view>
+
+
+
+
+</view>

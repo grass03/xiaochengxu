@@ -1,0 +1,55 @@
+<!--pages/curriculum/curriculum.wxml-->
+
+<!--pages/detailed/detailed.wxml-->
+<view class="container">
+  <view class="con_section">
+   <view wx:for='{{contentList}}' wx:key="item.id" wx:for-index="index" bindtap='detial'>
+    <view class="con_images">
+        <image src="{{item.shopping}}" mode="aspectFill"></image> 
+    </view>
+   </view> 
+  </view>
+
+  <!--音频  -->
+  <view class="audio_lin">
+    <view class="audio_in">
+      <audio  poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+    </view>
+  </view>
+  <view class="container">
+  <view class="header">
+    <view class='{{current == 0?"active":""}}' data-index="0" catchtap="bindHeaderTap">介绍</view>
+    <view class='{{current == 1?"active":""}}' data-index="1" bindtap="bindHeaderTap">大纲</view>
+    <view class="shift" animation="{{shiftanimation}}"></view>
+  </view>
+  <view class="wrapper">
+    <swiper id="swiper" class="main-swiper"  duration="300" current="{{current}}" bindchange="bindSwiper">
+      <swiper-item id="swiper-item" wx:for="{{listCon}}" wx:for-index='key' wx:for-item='item'>
+        <view class="introduce">
+           {{item.introduce}}
+        </view>
+      </swiper-item>
+      <swiper-item  wx:for="{{listtext}}" wx:for-index='key' wx:for-item='item'>
+        <view class="course">
+          <view class="hour">
+            <text class="hourList">{{item.hourlist}}</text>
+            <view class="times">{{item.hourTime}}</view>
+          </view>
+          <view class="circular"></view>
+          <view class="coucher">
+            <text class="title">{{item.title}}</text>
+            <image src="{{item.soop}}" mode="aspectFill"></image>
+            <text class="autoOne">{{item.some}}</text>
+          </view>
+        </view>
+      
+      </swiper-item>
+    </swiper>
+  </view>
+
+</view>
+
+  <view class="btn_box">
+    <view class="btn">购买专栏</view>
+  </view>
+</view>

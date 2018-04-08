@@ -1,0 +1,133 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  text-align: center;
+}
+.wrapper{
+  flex: 1; 
+  height:90rpx;
+  /* border-bottom: 1px solid #ccc; */
+}
+.main-swiper{
+  z-index: 100;
+  height: 90rpx;
+  width:100%;
+  position: fixed;
+  background-color: #fff;
+  line-height: 90rpx;
+}
+.nav_text {
+  font-size: 28rpx;
+}
+.nav_text_one {
+  /* border-bottom: 2rpx solid red; */
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  color: green;
+}
+.other-navigator-hove {
+  color:red;
+}
+/*banner  */
+.banswiper {
+  margin-top: 0rpx;
+}
+.banswiper image{
+   width: 100%; 
+}
+/*nav-list  */
+.nav-list {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  display: flex; 
+  justify-content: space-between; 
+}
+.nav_con {
+  width: 98rpx;
+  height: 100rpx;
+  text-align: cneter;
+  position: relative;
+  float: left;
+}
+.nav_con image{
+  width: 70rpx;
+  margin-bottom: -10rpx; 
+  display: block;
+  margin:0 auto;
+  float: left;
+  position: absolute;
+  left:15rpx;
+}
+.nav_con text {
+  display: block;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: -10rpx;
+  color: #666;
+}
+/*抢购  */
+.img_qiang {
+  width: 100%;
+  height: 160rpx;
+  margin-top: 40rpx;
+  border-bottom:50rpx solid #f4f4f4;
+}
+.img_qiang image {
+  width: 100%;
+  border-bottom:20rpx solid #fafafa;
+}
+/*content  */
+.con_section{
+  width:93%;
+  /* border: 1px solid #666; */
+  margin: 0 auto;
+}
+.content_massge {
+  padding-top:35rpx;
+}
+.con_images image {
+  width: 260rpx;
+  height: 150rpx;
+  float: left;
+}
+.con_text {
+  float: left;
+  margin-left: 20rpx;
+  width: 56%;
+  text-align: left;
+ 
+}
+.con_text .title {
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #111;
+}
+.bt_text {
+  font-size: 24rpx;
+  width: 100%;
+  height: 60rpx;
+  line-height: 90rpx;
+}
+.bt_textOne {
+  color:#444;
+  float: left;
+}
+.bt_textTow {
+ float: right;
+ width: 130rpx;
+ height: 35rpx;
+ background-color:#febb22; 
+ font-size: 22rpx;
+ margin-top: 25rpx;
+ line-height: 38rpx;
+ text-align: center;
+ color: #fff;
+ border-radius: 5rpx;
+}
+.bt_textThree{
+  float: right;
+  color:#2fc178;
+  margin-left: 6rpx;
+}
+

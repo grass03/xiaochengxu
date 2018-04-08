@@ -1,0 +1,36 @@
+<!--pages/detailed/detailed.wxml-->
+<view class="container">
+  <!--图书-->
+  <!-- <view class="banswiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+              autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorcolor}}">
+           <block wx:for-items="{{banner_url}}" wx:key="item.id">
+              <swiper-item>
+                <block wx:if="{{item}}">
+                  <image src="{{item}}"  mode="aspectFill"/>
+                </block>
+                <block wx:else>
+                   <image src="../../images/default_pic.png" mode="aspectFill"></image> 
+                </block>
+              </swiper-item>
+          </block> 
+      </swiper>
+  </view> -->
+  <!--图书  -->
+   <view class="con_section">
+   <view wx:for='{{contentList}}' wx:key="item.id" wx:for-index="index" bindtap='detial'>
+    <view class="con_images">
+        <image src="{{item.shopping}}" mode="aspectFill"></image> 
+    </view>
+    <view class="con_text">
+        <text>{{item.bt_text}}</text>
+        <view class="bt_content">{{item.bt_content}}</view> 
+        <view class="bt_content">{{item.bt_content}}</view> 
+        <view class="bt_content">{{item.bt_content}}</view>    
+    </view>
+  </view> 
+</view>
+<view class="btn_box">
+  <view class="btn">立即订阅</view>
+</view>
+</view>

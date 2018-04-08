@@ -1,0 +1,28 @@
+<!--pages/tixian/tixian.wxml-->
+<view class="mo">
+    <view class="ban-box">
+        <view class="nav">
+          <text>提现</text>
+          <view class="icon-btn" bindtap='retu'>
+            <image src="../../icons/reutrn4.png"></image>
+          </view>
+        </view>
+    </view>
+</view>
+<form>
+  <view class="tixain">
+    <view class="tixLiast">
+      <text>提现账号</text>
+      <input></input>
+    </view>
+    <view class="tixLiast tiaJin">
+      <text>提现金额</text>
+      <view class="left">￥</view><input type='text'></input>
+    </view>
+    <view class="tixLiast">
+      <text>可提现金额：</text>
+      <text style='color: #FF6161;'>全部提现</text>
+    </view>
+    <button class="btn">立即提现</button>
+  </view>
+</form>

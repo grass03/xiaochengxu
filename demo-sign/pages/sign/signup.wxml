@@ -1,0 +1,13 @@
+<!--pages/sign/signup.wxml-->
+<view class="container">
+  <view class="bg_content">
+    <form class="form" bindsubmit='bindSubmit'>
+      <label>邮箱:<input type="email" bindinput="bindEmail"/></label>
+      <label>密码:<input  type="password" bindinput='bindPassword'/></label>
+      <label>重复密码:<input  class="rpassword" bindinput="bindRPassword" type="password"/></label>
+      <view class="submit"><button size="mini" form-type='submit'>登录</button></view>
+      <text class="tips">{{tips}}</text>
+    </form>
+  </view>
+</view>
+

@@ -1,0 +1,22 @@
+<!--pages/Mycourse/Mycourse.wxml-->
+<view class="container">
+  <view class="titleBtn">
+    <view class="btnList">
+      <view>购买记录</view>
+      <view>听课记录</view>
+    </view>
+    <view class="btn-return">
+      <image src="../../icons/reutrn4.png">
+      </image>
+    </view>
+  </view>
+  <view style='margin-top: 80rpx;'>
+    <view class="content">
+      <image src="../../icons/auau.png"></image>
+      <view class="textCon">
+        <text>测试课程1第一课</text>
+        <view class="Price">￥60</view>
+      </view>
+    </view>
+  </view>
+</view>
